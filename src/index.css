@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Shippori Mincho', 'Zen Old Mincho', serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    background-color: #0c0d10;
+    color: #ede9e1;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-jp {
+  font-family: 'Shippori Mincho', 'Zen Old Mincho', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans-modern {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom scrollbar for museum aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1015;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2e38;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #474857;
+}
+
+/* Gold shimmer effect */
+.gold-shimmer {
+  background: linear-gradient(135deg, #cbb382 0%, #ecdcb0 50%, #9e8555 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(203, 179, 130, 0.25);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 25px rgba(203, 179, 130, 0.15);
+}
+
+/* Museum Paper Texture & Book styling */
+.book-paper {
+  background: radial-gradient(circle at 50% 50%, #15161c 0%, #0d0e12 100%);
+}
+
+.book-shadow {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+/* Leaflet dark theme adjustments */
+.leaflet-container {
+  background: #0a0b0d !important;
+  font-family: inherit !important;
+}
+
+/* OpenStreetMap dark inversion so no third-party API key is needed */
+.leaflet-tile {
+  filter: brightness(0.75) invert(100%) hue-rotate(190deg) contrast(1.15) saturate(0.35) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #14151b !important;
+  color: #ede9e1 !important;
+  border: 1px solid rgba(203, 179, 130, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8) !important;
+}
+
+.leaflet-popup-tip {
+  background: #14151b !important;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "今日見つけた美しいもの美術館 - Museum of Fleeting Beauty",
+  "description": "日常のなかで見つけた美しい情景・言葉・音楽・場所を保存し、AI学芸員とともに整理・展示・図録化するパーソナル美術館",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
